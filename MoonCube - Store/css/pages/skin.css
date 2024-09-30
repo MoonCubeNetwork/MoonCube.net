@@ -1,0 +1,196 @@
+@import "css/global.css";
+
+/*Header*/
+#header {
+    background: url("../../images/header-background.jpg") no-repeat fixed center;
+    min-width: 100%;
+    min-height: 800px;
+    height: 93.5vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+}
+
+#header .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 150px;
+    width: 100%;
+}
+
+#header .content .info {
+    display: flex;
+    flex-direction: column;
+}
+
+#header .content .info .minecraft-server-ip {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#header .content .info .title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 900;
+}
+
+#header .content .info .title span {
+    color: var(--main-color);
+}
+
+#header .content .description {
+    color: var(--description-color);
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+/* Styl tytułu nagłówka */
+#header .title {
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+}
+
+#header .description {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Kontener na karty */
+.key-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Odstęp między kartami */
+    justify-content: center;
+    padding: 20px; /* Dodanie paddingu dla marginesu wokół siatki */
+}
+
+/* Karta */
+.card {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.486);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Szerokość karty */
+    padding: 20px;
+    text-align: center;
+    margin: 20px; /* Dodanie marginesu, aby karty nie nachodziły na siebie */
+    transition: transform 0.3s ease-in-out; /* Dodane przejście */
+}
+
+.card h1 {
+    font-size: 18px; /* Zmniejszenie rozmiaru tekstu aby pasował do karty */
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.tags-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+}
+
+.tag, .s-tag {
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: black;
+}
+
+.s-tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Ceny */
+.key-price {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.key-price.hidden {
+    visibility: hidden; /* Ukrywanie ceny bez usuwania miejsca */
+}
+
+.discounted-price {
+    font-size: 18px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out; /* Dodane przejście */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Przycisk filtra */
+.filter-btn {
+    background-color: var(--main-color);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out; /* Dodane przejście */
+}
+
+.filter-btn.active {
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+}
+
+.filter-btn:hover {
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+}
+
+.filter-btn:hover {
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+    transform: scale(1.05); /* Dodane przejście */
+}

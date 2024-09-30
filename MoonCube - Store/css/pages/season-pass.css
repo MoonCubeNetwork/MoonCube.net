@@ -1,0 +1,480 @@
+@import "css/global.css";
+
+/*Header*/
+#header {
+    background: url("../../images/header-background.jpg") no-repeat fixed center;
+    min-width: 100%;
+    min-height: 800px;
+    height: 93.5vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+}
+
+#header .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 150px;
+    width: 100%;
+}
+
+#header .content .info {
+    display: flex;
+    flex-direction: column;
+}
+
+#header .content .info .minecraft-server-ip {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#header .content .info .title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 900;
+}
+
+#header .content .info .title span {
+    color: var(--main-color);
+}
+
+#header .content .description {
+    color: var(--description-color);
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+/*Header*/
+@media screen and (max-width: 1625px) {
+    #header .content {
+        padding: 150px 90px;
+    }
+}
+
+@media screen and (max-width: 1361px) {
+    #header .content {
+        flex-direction: column;
+        padding: 120px 90px;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    #header .content {
+        padding: 150px 30px;
+    }
+
+    #header .content .info .minecraft-server-ip {
+        font-size: 15px;
+    }
+
+    #header .content .info .title {
+        font-size: 40px;
+    }
+
+    #header .content .info .description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #header .content {
+        justify-content: start;
+        align-items: start;
+    }
+
+    #header .content .info .title {
+        font-size: 30px;
+    }
+}
+
+#category .content {
+    color: white;
+    padding: 20px;
+    flex: 1;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#category .content .left .section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--white-color);
+    position: relative;
+}
+
+#category .content .left .section-title span {
+    color: var(--main-color);
+}
+
+#category .content .left .section-title::before {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    width: 150px;
+    height: 1px;
+    border-radius: 5px;
+    background: var(--description-color);
+}
+
+#category .content .left .section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--main-color);
+}
+
+/*Nothing Header*/
+#n-header {
+    background: url("../../images/header-background.jpg") no-repeat fixed center;
+    height: 85vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#n-header .content .info .title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#n-header .content .info .title span {
+    color: var(--main-color);
+}
+
+/*Prism Traveler Header*/
+#pt-header {
+    background: url("../../images/header-background.jpg") no-repeat fixed center;
+    height: 85vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#pt-header .content .info .title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#pt-header .content .info .title span {
+    color: var(--main-color);
+}
+
+/*Cosmos Minecraft Header*/
+#cm-header {
+    background: url("../../images/header-background.jpg") no-repeat fixed center;
+    height: 85vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#cm-header .content .info .title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#cm-header .content .info .title span {
+    color: var(--main-color);
+}
+
+/*Star dust Header*/
+#sd-header {
+    background: url("../../images/header-background.jpg") no-repeat fixed center;
+    height: 55vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#sd-header .content .info .title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+#sd-header .content .info .title span {
+    color: var(--main-color);
+}
+
+/*How to work Header*/
+#htw-header {
+    background: url("../../images/header-background.jpg") no-repeat fixed center;
+    height: 55vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#htw-header .content .info .title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+#htw-header .content .info .title span {
+    color: var(--main-color);
+}
+
+/*n-Header*/
+@media screen and (max-width: 1625px) {
+    #n-header .content {
+        padding: 150px 90px;
+    }
+}
+
+@media screen and (max-width: 1361px) {
+    #n-header .content {
+        flex-direction: column;
+        padding: 120px 90px;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    #n-header .content {
+        padding: 150px 30px;
+    }
+
+    #n-header .content .info .minecraft-server-ip {
+        font-size: 15px;
+    }
+
+    #n-header .content .info .title {
+        font-size: 40px;
+    }
+
+    #n-header .content .info .description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #n-header .content {
+        justify-content: start;
+        align-items: start;
+    }
+
+    #n-header .content .info .title {
+        font-size: 30px;
+    }
+}
+
+/*pt-Header*/
+@media screen and (max-width: 1625px) {
+    #header .content {
+        padding: 150px 90px;
+    }
+}
+
+@media screen and (max-width: 1361px) {
+    #pt-header .content {
+        flex-direction: column;
+        padding: 120px 90px;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    #pt-header .content {
+        padding: 150px 30px;
+    }
+
+    #pt-header .content .info .minecraft-server-ip {
+        font-size: 15px;
+    }
+
+    #pt-header .content .info .title {
+        font-size: 40px;
+    }
+
+    #pt-header .content .info .description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #pt-header .content {
+        justify-content: start;
+        align-items: start;
+    }
+
+    #pt-header .content .info .title {
+        font-size: 30px;
+    }
+}
+
+/*cm-Header*/
+@media screen and (max-width: 1625px) {
+    #cm-header .content {
+        padding: 150px 90px;
+    }
+}
+
+@media screen and (max-width: 1361px) {
+    #cm-header .content {
+        flex-direction: column;
+        padding: 120px 90px;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    #cm-header .content {
+        padding: 150px 30px;
+    }
+
+    #cm-header .content .info .minecraft-server-ip {
+        font-size: 15px;
+    }
+
+    #cm-header .content .info .title {
+        font-size: 40px;
+    }
+
+    #cm-header .content .info .description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #cm-header .content {
+        justify-content: start;
+        align-items: start;
+    }
+
+    #cm-header .content .info .title {
+        font-size: 30px;
+    }
+}
+
+/*sd-Header*/
+@media screen and (max-width: 1625px) {
+    #sd-header .content {
+        padding: 150px 90px;
+    }
+}
+
+@media screen and (max-width: 1361px) {
+    #sd-header .content {
+        flex-direction: column;
+        padding: 120px 90px;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    #sd-header .content {
+        padding: 150px 30px;
+    }
+
+    #sd-header .content .info .minecraft-server-ip {
+        font-size: 15px;
+    }
+
+    #sd-header .content .info .title {
+        font-size: 40px;
+    }
+
+    #sd-header .content .info .description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #sd-header .content {
+        justify-content: start;
+        align-items: start;
+    }
+
+    #sd-header .content .info .title {
+        font-size: 25px;
+    }
+}
+
+/*htw-Header*/
+@media screen and (max-width: 1625px) {
+    #htw-header .content {
+        padding: 150px 90px;
+    }
+}
+
+@media screen and (max-width: 1361px) {
+    #htw-header .content {
+        flex-direction: column;
+        padding: 120px 90px;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    #htw-header .content {
+        padding: 150px 30px;
+    }
+
+    #htw-header .content .info .minecraft-server-ip {
+        font-size: 15px;
+    }
+
+    #htw-header .content .info .title {
+        font-size: 40px;
+    }
+
+    #htw-header .content .info .description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #htw-header .content {
+        justify-content: start;
+        align-items: start;
+    }
+
+    #htw-header .content .info .title {
+        font-size: 20px;
+    }
+}

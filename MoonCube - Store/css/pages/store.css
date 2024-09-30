@@ -1,0 +1,362 @@
+@import "css/global.css";
+
+/*Header*/
+#header {
+    background: url("../../images/header-background.jpg") no-repeat fixed center;
+    min-width: 100%;
+    min-height: 800px;
+    height: 93.5vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+}
+
+#header .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 150px;
+    width: 100%;
+}
+
+#header .content .info {
+    display: flex;
+    flex-direction: column;
+}
+
+#header .content .info .minecraft-server-ip {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#header .content .info .title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 900;
+}
+
+#header .content .info .title span {
+    color: var(--main-color);
+}
+
+#header .content .description {
+    color: var(--description-color);
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+/*info*/
+#info {
+    background: url("../../images/header-background.jpg") no-repeat fixed center;
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+}
+
+#info .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#info .content .section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--white-color);
+    position: relative;
+    text-align: center;
+}
+
+#info .content .section-title span {
+    color: var(--main-color);
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Panel po lewej stronie */
+.left-panel {
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+    padding: 20px;
+    flex: 1;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Aby nie zakrywał tabeli cen */
+}
+
+/* Nagłówek w panelu */
+.left-panel h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    height: 150px;
+}
+
+/* Lista w panelu */
+.left-panel ul {
+    list-style: none;
+    padding: 0;
+    height: 100px;
+}
+
+.left-panel ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(17, 18, 20, 0.637);
+    border-radius: 10px;
+    height: 100px;
+}
+
+/* Wyróżnienia na liście w panelu */
+.left-panel ul li strong {
+    display: block;
+    font-size: 16px;
+}
+
+.left-panel ul li span {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Kontener na tabelę cen */
+.price-table {
+    display: flex;
+    flex: 3;
+    gap: 10px;
+    align-items: stretch; /* Rozciąga rangi na wysokość */
+}
+
+/* Klasa dla każdej rangi */
+.tier {
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    min-width: 200px; /* Minimalna szerokość rangi */
+    max-width: 300px; /* Maksymalna szerokość rangi */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out; /* Dodane przejście */
+}
+
+/* Styl nagłówka */
+.tier .header {
+    background-color: rgba(17, 18, 20, 0.637);
+    height: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tier .header img {
+    max-height: 100%; /* Ustawienie obrazka na pełną wysokość nagłówka */
+    max-width: 100%; /* Ustawienie obrazka na pełną szerokość nagłówka */
+    object-fit: cover; /* Zapewnia, że obrazek wypełnia nagłówek bez zniekształceń */
+}
+
+/* Styl ceny */
+.tier .price {
+    font-size: 18px;
+    border-radius: 10px;
+    color: #ffffff;
+    margin: 10px 0;
+    height: 150px;
+}
+
+/* Lista w rangi */
+.tier ul {
+    list-style: none;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    color: white;
+    
+}
+
+/* Elementy listy */
+.tier ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(17, 18, 20, 0.637);
+    border-radius: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ikona w liście */
+.tier ul li img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+/* Styl dla przycisku */
+button {
+    background-color: #f90;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out; /* Dodane przejście */
+}
+
+button:hover {
+    background-color: #e80;
+}
+
+/* Efekt hover na rangi */
+.tier:hover {
+    transform: scale(1.025);
+}
+
+#category .content {
+    color: white;
+    padding: 20px;
+    flex: 1;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#category .content .left .section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--white-color);
+    position: relative;
+}
+
+#category .content .left .section-title::before {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    width: 150px;
+    height: 1px;
+    border-radius: 5px;
+    background: var(--description-color);
+}
+
+#category .content .left .section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--main-color);
+}
+
+.key-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px; /* Odstęp między kartami */
+    justify-content: center;
+    align-content: center; /* Wyśrodkowanie kart w pionie */
+    background: transparent;
+    padding: 20px; /* Dodanie paddingu dla marginesu wokół siatki */
+}
+
+.card {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.486);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 500px;
+    width: 400px; /* Szerokość karty */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Dodane przejście */
+}
+
+.card h1 {
+    font-size: 18px; /* Zmniejszenie rozmiaru tekstu aby pasował do karty */
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.tag {
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: black;
+}
+
+.key-price {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.key-price.hidden {
+    visibility: hidden; /* Ukrywanie ceny bez usuwania miejsca */
+}
+
+.discounted-price {
+    font-size: 18px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Efekt hover na karcie */
+.card:hover {
+    transform: scale(1.05);
+}
